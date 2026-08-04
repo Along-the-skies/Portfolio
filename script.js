@@ -23,13 +23,13 @@
     { name: 'Scratch', short: '😺', percent: 99.99 },
     { name: 'Python', short: 'Py', percent: 90 },
     { name: 'Django', short: 'Dj', percent: 85 },
-    { name: 'HTML', short: 'H', percent: 95 },
-    { name: 'CSS', short: 'C', percent: 88 },
-    { name: 'JavaScript', short: 'Js', percent: 78 },
+    { name: 'HTML', short: 'H', percent: 5 },
+    { name: 'CSS', short: 'C', percent: 1 },
+    { name: 'JavaScript', short: 'Js', percent: 43 },
     { name: 'Git', short: 'Git', percent: 82 },
     { name: 'SQL', short: 'SQL', percent: 75 },
     { name: 'Flask', short: 'Fl', percent: 70 },
-    { name: 'Godot', short: 'Gd', percent: 65 },
+    { name: 'Godot', short: 'Gd', percent: 32 },
   ];
 
 const PROJECTS = [
