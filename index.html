@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vasudev &mdash; Python &amp; Django Developer</title>
+    <meta
+      name="description"
+      content="Portfolio of Vasudev, a Python, Django and Full Stack developer."
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ============ SCROLL PROGRESS BAR ============ -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- ============ CURSOR SPOTLIGHT (desktop only) ============ -->
+    <div class="cursor-spotlight" id="cursorSpotlight"></div>
+
+    <!-- ============ NAVBAR ============ -->
+    <header class="navbar" id="navbar">
+      <div class="navbar-inner">
+        <a href="#home" class="logo" data-nav-link>
+          <span class="logo-bracket">&lt;</span>VS<span class="logo-bracket"
+            >/&gt;</span
+          >
+        </a>
+
+        <nav class="nav-links" id="navLinks">
+          <a href="#home" class="nav-link active" data-nav-link>Home</a>
+          <a href="#about" class="nav-link" data-nav-link>About</a>
+          <a href="#skills" class="nav-link" data-nav-link>Skills</a>
+          <a href="#projects" class="nav-link" data-nav-link>Projects</a>
+          <a href="#timeline" class="nav-link" data-nav-link>Timeline</a>
+          <a href="#contact" class="nav-link" data-nav-link>Contact</a>
+        </nav>
+
+        <button
+          class="hamburger"
+          id="hamburger"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- ============ HERO SECTION ============ -->
+    <section class="hero" id="home">
+      <div class="hero-bg">
+        <div class="gradient-layer"></div>
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+        <div class="stars" id="stars"></div>
+        <div class="grid-overlay"></div>
+      </div>
+
+      <div class="hero-content">
+        <p class="hero-eyebrow reveal-up">// 01_hello_world</p>
+        <h1 class="hero-heading reveal-up" style="--delay: 1">
+          Hi, I'm <span class="text-gradient" id="typedName">Vasudev</span>
+        </h1>
+        <p
+          class="hero-subtitle reveal-up"
+          style="--delay: 2"
+          id="typedRole"
+        ></p>
+        <p class="hero-intro reveal-up" style="--delay: 3">
+          I build clean, purposeful software &mdash; from Django-powered web
+          apps to game logic in Godot. I like solving real problems with simple,
+          readable code and I'm always shipping something new.
+        </p>
+
+        <div class="hero-actions reveal-up" style="--delay: 4">
+          <a href="#projects" class="btn btn-primary" data-nav-link>
+            View Projects
+            <svg viewBox="0 0 24 24" width="18" height="18">
+              <path
+                d="M5 12h14M13 6l6 6-6 6"
+                stroke="currentColor"
+                stroke-width="2"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+          <a href="#contact" class="btn btn-ghost" data-nav-link>Contact Me</a>
+        </div>
+      </div>
+
+      <a
+        href="#about"
+        class="scroll-indicator"
+        data-nav-link
+        aria-label="Scroll down"
+      >
+        <span class="scroll-mouse"><span class="scroll-dot"></span></span>
+        <span class="scroll-label">Scroll</span>
+      </a>
+    </section>
+
+    <!-- ============ ABOUT SECTION ============ -->
+    <section class="about" id="about">
+      <div class="section-inner">
+        <p class="eyebrow reveal-up">// 02_about_me</p>
+
+        <div class="about-grid">
+          <div class="about-visual reveal-left">
+            <div class="profile-ring">
+              <div class="profile-placeholder">
+                <svg viewBox="0 0 24 24" width="72" height="72">
+                  <path
+                    d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-3.3 0-10 1.7-10 5v3h20v-3c0-3.3-6.7-5-10-5z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+              <div class="ring-dot ring-dot-1"></div>
+              <div class="ring-dot ring-dot-2"></div>
+              <div class="ring-dot ring-dot-3"></div>
+            </div>
+          </div>
+
+          <div class="about-content reveal-up">
+            <h2 class="section-title">About Me</h2>
+            <p class="about-text">
+              I'm Vasudev &mdash; a student developer passionate about building
+              modern web applications, desktop software, games, and creative
+              projects. I primarily work with Python and Django, while also
+              creating games and advanced projects in Scratch and experimenting
+              with Godot. I enjoy turning ideas into real products, writing
+              clean and maintainable code, and constantly learning new
+              technologies. My specialty? Fixing bugs... and occasionally
+              creating a few brand-new ones along the way. 😄
+            </p>
+
+            <div class="info-cards">
+              <div class="info-card">
+                <div class="info-icon">
+                  <svg viewBox="0 0 24 24" width="20" height="20">
+                    <path
+                      d="M12 2C7.6 2 4 5.6 4 10c0 6 8 12 8 12s8-6 8-12c0-4.4-3.6-8-8-8zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </div>
+                <span>Kerala, India</span>
+              </div>
+              <div class="info-card">
+                <div class="info-icon">
+                  <svg viewBox="0 0 24 24" width="20" height="20">
+                    <path
+                      d="M12 3 1 9l11 6 9-4.9V17h2V9L12 3zM5 13.2V17c0 2.2 3.1 4 7 4s7-1.8 7-4v-3.8l-7 3.8-7-3.8z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </div>
+                <span>Student</span>
+              </div>
+              <div class="info-card">
+                <div class="info-icon">
+                  <svg viewBox="0 0 24 24" width="20" height="20">
+                    <path
+                      d="M9.4 16.6 4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0L19.2 12l-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </div>
+                <span>Python Developer</span>
+              </div>
+              <div class="info-card">
+                <div class="info-icon">
+                  <svg viewBox="0 0 24 24" width="20" height="20">
+                    <path
+                      d="M12 2 2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <span>Open Source Enthusiast</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS SECTION ============ -->
+    <section class="skills" id="skills">
+      <div class="section-inner">
+        <p class="eyebrow reveal-up">// 03_skills</p>
+        <h2 class="section-title reveal-up">Tools I Build With</h2>
+        <p class="section-subtitle reveal-up">
+          A snapshot of the languages and tools I reach for most.
+        </p>
+
+        <div class="skills-grid" id="skillsGrid">
+          <!-- Skill cards are injected by script.js from the SKILLS data array -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS SECTION ============ -->
+    <section class="projects" id="projects">
+      <div class="section-inner">
+        <p class="eyebrow reveal-up">// 04_projects</p>
+        <h2 class="section-title reveal-up">Featured Projects</h2>
+        <p class="section-subtitle reveal-up">
+          A selection of things I've designed, broken, and rebuilt.
+        </p>
+
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Project cards are injected by script.js from the PROJECTS data array -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TIMELINE SECTION ============ -->
+    <section class="timeline" id="timeline">
+      <div class="section-inner">
+        <p class="eyebrow reveal-up">// 05_timeline</p>
+        <h2 class="section-title reveal-up">My Journey</h2>
+        <p class="section-subtitle reveal-up">
+          How I went from first script to shipped projects.
+        </p>
+
+        <div class="timeline-track" id="timelineTrack">
+          <!-- Timeline items are injected by script.js from the TIMELINE data array -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STATISTICS SECTION ============ -->
+    <section class="stats" id="stats">
+      <div class="section-inner">
+        <div class="stats-grid">
+          <div class="stat-card reveal-up">
+            <span class="stat-number" data-target="18">0</span>
+            <span class="stat-plus">+</span>
+            <p class="stat-label">Projects Completed</p>
+          </div>
+          <div class="stat-card reveal-up" style="--delay: 1">
+            <span class="stat-number" data-target="24">0</span>
+            <span class="stat-plus">+</span>
+            <p class="stat-label">GitHub Repositories</p>
+          </div>
+          <div class="stat-card reveal-up" style="--delay: 2">
+            <span class="stat-number" data-target="6">0</span>
+            <p class="stat-label">Programming Languages</p>
+          </div>
+          <div class="stat-card reveal-up" style="--delay: 3">
+            <span class="stat-number" data-target="742">0</span>
+            <p class="stat-label">Coffee Consumed &#9749;</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT SECTION ============ -->
+    <section class="contact" id="contact">
+      <div class="section-inner">
+        <p class="eyebrow reveal-up">// 06_contact</p>
+        <h2 class="section-title reveal-up">Let's Build Something</h2>
+        <p class="section-subtitle reveal-up">
+          Have a project in mind or just want to talk code? My inbox is open.
+        </p>
+
+        <div class="contact-grid">
+          <form
+            class="contact-form glass-card reveal-up"
+            id="contactForm"
+            novalidate
+          >
+            <div class="form-row">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your name"
+                required
+              />
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="you@example.com"
+                required
+              />
+            </div>
+            <div class="form-row">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Tell me about your idea..."
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">
+              <span id="sendBtnLabel">Send Message</span>
+              <svg viewBox="0 0 24 24" width="18" height="18">
+                <path d="M3 20l18-8L3 4v6l12 2-12 2v6z" fill="currentColor" />
+              </svg>
+            </button>
+            <p
+              class="form-status"
+              id="formStatus"
+              role="status"
+              aria-live="polite"
+            ></p>
+          </form>
+
+          <div class="contact-links reveal-up" style="--delay: 1">
+            <a
+              href="https://github.com/Along-the-skies/"
+              target="_blank"
+              rel="noopener"
+              class="contact-link glass-card"
+            >
+              <span class="contact-icon">
+                <svg viewBox="0 0 24 24" width="22" height="22">
+                  <path
+                    d="M12 2C6.5 2 2 6.5 2 12c0 4.4 2.9 8.2 6.8 9.5.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.5-1.1-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.7.4-1.1.6-1.4-2.3-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.5-1.3.1-2.7 0 0 .8-.3 2.7 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .6 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.3 4.7-4.6 5 .4.3.7 1 .7 2v2.9c0 .3.2.6.7.5A10 10 0 0 0 22 12c0-5.5-4.5-10-10-10z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </span>
+              <div>
+                <span class="contact-link-title">GitHub</span>
+                <span class="contact-link-sub">@vasudev</span>
+              </div>
+            </a>
+
+            <a
+              href="https://discord.gg/Q7q8mGQGrb/"
+              target="_blank"
+              rel="noopener"
+              class="contact-link glass-card"
+            >
+              <span class="contact-icon">
+                <svg viewBox="0 0 24 24" width="22" height="22">
+                  <path
+                    d="M20 5.5A17 17 0 0 0 15.6 4l-.3.6a13 13 0 0 1 3.8 1.4 15 15 0 0 0-14.2 0A13 13 0 0 1 8.7 4.6L8.4 4A17 17 0 0 0 4 5.5C1.7 9 1 12.4 1.3 15.7a17 17 0 0 0 5.1 2.6l.8-1.3a10.8 10.8 0 0 1-1.6-.8l.4-.3a12.2 12.2 0 0 0 10 0l.4.3a10.8 10.8 0 0 1-1.6.8l.8 1.3a17 17 0 0 0 5.1-2.6c.4-3.9-.6-7.3-2.7-10.2zM9 13.6c-.8 0-1.5-.8-1.5-1.7S8.1 10.2 9 10.2s1.5.8 1.5 1.7-.7 1.7-1.5 1.7zm6 0c-.8 0-1.5-.8-1.5-1.7s.7-1.7 1.5-1.7 1.5.8 1.5 1.7-.7 1.7-1.5 1.7z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </span>
+              <div>
+                <span class="contact-link-title">Discord</span>
+                <span class="contact-link-sub">vasudev#0001</span>
+              </div>
+            </a>
+
+            <a href="vasudevonden@gmail.com" class="contact-link glass-card">
+              <span class="contact-icon">
+                <svg viewBox="0 0 24 24" width="22" height="22">
+                  <path
+                    d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm0 2v.01L12 12l8-5.99V6H4zm16 12V8.24l-8 6-8-6V18h16z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </span>
+              <div>
+                <span class="contact-link-title">Email</span>
+                <span class="contact-link-sub">vasudevonden@gmail.com</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+      <div class="section-inner footer-inner">
+        <p>&copy; <span id="year"></span> Vasudev. All rights reserved.</p>
+        <p class="footer-made">
+          Made with <span class="heart">&#10084;</span> by Vasudev
+        </p>
+        <button class="back-to-top" id="backToTop" aria-label="Back to top">
+          <svg viewBox="0 0 24 24" width="18" height="18">
+            <path
+              d="M12 19V5M5 12l7-7 7 7"
+              stroke="currentColor"
+              stroke-width="2"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
